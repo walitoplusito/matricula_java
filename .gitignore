@@ -1,0 +1,33 @@
+```
+# Compiled Java files
+*.class
+
+# Package manager directories
+target/
+
+# IDE specific files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Build directories (if any)
+build/
+dist/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment files
+.env
+.env.local
+*.env.*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+```
