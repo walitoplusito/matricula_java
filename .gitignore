@@ -1,22 +1,31 @@
 ```
-# Compiled Java classes
+# Compiled Java files
 *.class
 
-# Eclipse IDE files
-.project
-.settings/
-bin/
+# Package manager directories
+target/
 
-# Data files
-data/*.txt
-
-# Logs and temp files
-*.log
-*.tmp
-
-# Editors
-.vscode/
+# IDE specific files
 .idea/
+*.iml
+*.ipr
+*.iws
+
+# Build directories (if any)
+build/
+dist/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment files
+.env
+.env.local
+*.env.*
 
 # OS generated files
 .DS_Store
