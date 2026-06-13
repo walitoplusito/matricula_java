@@ -1,0 +1,24 @@
+```
+# Compiled Java classes
+*.class
+
+# Eclipse IDE files
+.project
+.settings/
+bin/
+
+# Data files
+data/*.txt
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Editors
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+```
