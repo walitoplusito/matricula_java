@@ -1,0 +1,168 @@
+﻿
+1.1. Definición y alcance
+
+Diseñe un sistema de REGISTRO Y MATRÍCULA DE ALUMNOS en una entidad educativa, que permita gestionar diversos servicios y se realice desde el momento en que un alumno ingresa a la base de datos.
+
+Para el efecto considere los siguientes módulos principales para el desarrollo del sistema:
+
+Módulo de Mantenimiento: permitirá realizar el mantenimiento de la información correspondiente a alumnos y cursos.
+
+Módulo de Registro: permitirá realizar matrículas y retiros.
+
+Módulo de Consulta: permitirá visualizar la información referente a los alumnos, cursos, matrículas y retiros respectivamente.
+
+Módulo de Reporte: permitirá obtener diversos reportes requeridos por la administración. Las clases que intervienen son:
+- Alumno, Curso
+- Matrícula, Retiro
+- 
+
+
+Clase Alumno
+
+AtributoTipoObservacióncodAlumnointcorrelativo (202010001)nombresStringapellidosStringdniStringedadintcelularintestadoint0 = registrado
+1 = matriculado
+2 = retirado
+Clase Curso
+
+AtributoTipoObservacióncodCursointasignaturaStringcicloint0 = primero
+1 = segundo
+...
+5 = sextocréditosinthorasint
+Clase Matrícula
+
+AtributoTipoObservaciónnumMatriculaintcorrelativo (100001)codAlumnointcodCursointfechaString“dd/mm/aaaa”horaString“hh:mm:ss”
+Clase Retiro
+
+AtributoTipoObservaciónnumRetirointcorrelativo (200001)numMatriculaintfechaString“dd/mm/aaaa”horaString“hh:mm:ss”
+
+MENU PRINCIPAL DEL SISTEMA
+
+El menú principal tendrá las siguientes opciones:
+
+a) Mantenimiento
+b) Registro
+c) Consulta
+d) Reporte
+a) 
+
+MANTENIMIENTO
+
+⇨ Alumno
+Adicionar
+
+⇒ Genere código correlativo
+⇒ ingrese nombres, apellidos, dni, edad y celular
+⇒ Fije el estado en 0 (registrado)
+⇒ El dni no debe repetirse
+
+Consultar, Modificar, Eliminar
+
+⇒ Visualice todos los alumnos con sus datos completos
+⇒ Puede modificar los datos en cualquier momento menos código ni dni
+⇒ Puede eliminar a un alumno sólo cuando su estado es 0 (registrado)
+⇒ La eliminación es física y se efectuará previa confirmación
+⇒ Grabar los cambios
+
+⇨ Curso
+
+Adicionar
+
+⇒ Ingrese código de cuatro dígitos evitando repetidos
+⇒ ingrese asignatura, ciclo, número de créditos y cantidad de horas
+⇒ Luego de adicionar un curso la lista debe quedar ordenada por código
+
+Consultar, Modificar, Eliminar
+
+⇒ Visualice todos los cursos con sus datos completos
+⇒ Puede modificar los datos en cualquier momento menos el código
+⇒ Un curso puede eliminarse sólo cuando ningún alumno esté matriculado en él
+⇒ La eliminación es física y se efectuará previa confirmación
+⇒ Grabar los cambios
+
+REGISTRO
+⇨ Matrícula
+Adicionar
+
+⇒ Genere código correlativo
+⇒ Tome la fecha y hora del sistema
+⇒ Matricule a un alumno una sola vez y en un solo curso
+⇒ Fije el estado del alumno en 1 (matriculado)
+
+Consultar, Modificar, Eliminar
+
+⇒ Visualice todas las matrículas con sus datos completos
+⇒ Sólo puede cambiar en cualquier momento el curso matriculado
+⇒ Puede cancelar una matrícula sólo cuando el estado del alumno no sea 2 (retirado)
+⇒ La cancelación de la matrícula es física y se efectuará previa confirmación
+⇒ Grabar los cambios
+
+
+⇨ Retiro
+Adicionar
+
+⇒ Genere código correlativo
+⇒ Tome la fecha y hora del sistema
+⇒ Desactive temporalmente una matrícula fijando el estado del alumno en 2 (retirado)
+
+Consultar, Modificar, Eliminar
+
+⇒ Visualice todos los retiros con sus datos completos
+⇒ Sólo puede cambiar en cualquier momento el curso de una matrícula desactivada
+⇒ Puede cancelar un retiro sólo si el estado del alumno es 2 (retirado)
+⇒ La cancelación del retiro, es físico y se efectuará previa confirmación
+⇒ Grabar los cambios
+
+CONSULTA
+
+⇨ Alumnos y cursos
+
+- Ingresar un código de alumno y mostrar sus datos completos. Si está matriculado visualizar los datos completos del curso.
+- Ingresar un código de curso y mostrar sus datos completos.
+
+⇨ Matrículas y retiros
+
+- Ingresar un número de matrícula y mostrar los datos completos del alumno y del curso respectivo.
+- Ingresar un número de retiro y mostrar los datos completos del alumno y del curso respectivo.
+
+REPORTE
+
+⇨ Alumnos con matrícula pendiente: mostar los datos completos de aquellos alumnos que solamente están registrados.
+
+⇨ Alumnos con matrícula vigente: mostar los datos completos de aquellos alumnos que solamente están matriculados.
+
+⇨ Alumnos matriculados por curso: mostar los nombres de los alumnos matriculados en cada uno de los cursos.
+
+• 
+
+
+
+
+
+
+2. RUBRICA PARA EL PROYECTO
+
+2.1. Calificación del Informe del Proyecto
+
+El Informe de Proyecto tiene un peso de 60% de la nota final del proyecto (EF)
+Criterios de EvaluaciónEscala de CalificaciónPARTE FORMAL – 08 PUNTOSExcelente (2)Bueno (1)Malo (0)Justificación del proyecto
+(2 puntos)Justifica el proyecto eviden- ciando el aporte e impacto en las empresas, personas o sociedad y describe quiénes son los benefi- ciarios del proyecto.Justifica el proyecto evidenciando el aporte e impacto en las empresas, personas o sociedad.No desarrolló la justificación del proyecto.
+Objetivos del proyecto (2 puntos)Excelente (2)Bueno (1)Malo (0)Se presentan objetivos claros y coherentes con el proyecto.Se presentan objetivos muy genera- les que guardan poca relación con el proyecto.Se presentan obje- tivos muy genera- les que guardan poca relación con el proyecto.
+Importancia del proyecto
+(2 puntos)Excelente (2)Bueno (1)Malo (0)Muestra claramente la impor- tancia del proyecto y describe las razones de su realización.Muestra la importancia de su pro- yecto de manera general sin con- templar las razones de su realiza- ción.No especifica la importancia de su proyecto o lo reali- za de manera inco- rrecta.Conclusiones y recomendaciones (2 puntos)Excelente (2)Bueno (1)Malo (0)Las conclusiones son específi- cas y tiene relación con lo inves- tigado en el proyecto.Las conclusiones son muy genera- les y no evidencian ninguna inves- tigación.No llega a ninguna conclusión.PARTE TÉCNICA – 12 PUNTOSExcelente (3)Bueno (2)Regular (1)Malo (0)Mantenimiento Cama Paciente
+Medicina (3 puntos)Implementa la GUI, las operaciones de mantenimiento (usando la clase ArrayList) y graba los datos en un archivo.Implementa la GUI, las operaciones de mantenimiento (usando la clase ArrayList) pero no graba los datos en un archivo.Únicamente implementa la GUI.No implementa la solución.Excelente (4)Bueno (2)Regular (1)Malo (0)
+Registro Consulta Internamiento (4 puntos)Implementa la GUI, las operaciones de mantenimiento (usando la clase ArrayList) y graba los datos en un archivo.Implementa la GUI, las operaciones de mantenimiento (usando la clase ArrayList) pero no graba los datos en un archivo.Únicamente implementa la GUI.No implementa la solución.PagoExcelente (4)Bueno (2)Regular (1)Malo (0)
+
+
+Criterios de EvaluaciónEscala de Calificación  Consultas Internamientos
+(2 puntos)Implementa la GUI y genera la boleta en forma correcta.Implementa la GUI pero no genera la boleta.Implementa la GUI.No implementa la solución.
+
+Reporte
+(3 puntos)Excelente (3)Bueno (2)Regular (1)Malo (0)Implementa la GUI y los cuatro reportes en forma correcta.Implementa la GUI y dos reportes en forma correcta.Implementa la GUI y un reporte en forma correcta.No implementa la solución.
+2.2. Calificación de la Sustentación del Proyecto
+
+La sustentación del proyecto tiene un peso de 40% de la nota final del proyecto (SP1)
+
+
+
+
+

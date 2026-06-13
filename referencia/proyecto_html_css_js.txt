@@ -1,0 +1,144 @@
+INTRODUCCIÓN
+El presente proyecto propone el desarrollo de una plataforma web denominada “Match Group”, diseñada para resolver una problemática recurrente en los cursos virtuales de educación superior: la formación ineficiente de grupos de trabajo al inicio del ciclo académico.
+En contextos de enseñanza completamente virtual, donde los estudiantes provienen de diferentes especialidades y ciclos, no existen espacios previos de interacción ni información relevante sobre los compañeros. Esto obliga a los alumnos a formar grupos de manera apresurada y casi aleatoria, lo que frecuentemente genera desequilibrios en la distribución de tareas, baja participación de algunos integrantes, sobrecarga en otros y, en consecuencia, un impacto negativo en la calidad del trabajo grupal y en la calificación final del proyecto y del curso.
+El objetivo principal del proyecto es desarrollar una solución sencilla y accesible que permita a los estudiantes conocerse mejor antes de formar grupos, mediante el registro voluntario de información relevante y la posibilidad de filtrar perfiles compatibles según criterios de afinidad (disponibilidad, habilidades, intereses, entre otros).
+El impacto esperado es contribuir a una mayor equidad en la distribución de responsabilidades, incrementar el compromiso y la colaboración efectiva, y elevar el rendimiento académico general de los proyectos grupales en entornos virtuales. Esta solución es especialmente relevante en instituciones que imparten cursos de corta duración (modulares de 2 meses), donde el tiempo para conocerse es muy limitado.
+CAPÍTULO 1
+DIAGNÓSTICO DEL PROBLEMA
+1.1.- Diagnóstico situacional
+En la educación superior virtual, la formación de grupos de trabajo representa una etapa crítica al inicio del ciclo académico. Sin embargo, en la mayoría de los casos, los estudiantes deben conformar estos grupos sin contar con información previa sobre sus compañeros, ya que:
+La modalidad es 100 % virtual, sin clases presenciales ni espacios informales de interacción.
+Los cursos reúnen alumnos de distintas especialidades (por ejemplo, Ingeniería de Sistemas, Ciencia de Datos, Ciberseguridad, Administración de Redes, etc.) y de diferentes ciclos (primer ciclo hasta avanzados).
+No existen plataformas institucionales ni mecanismos formales que faciliten el conocimiento mutuo antes de la asignación de grupos.
+Esta situación genera consecuencias negativas documentadas en la práctica educativa:
+Formación de grupos a última hora y casi al azar (similar a una “cita a ciegas académica”).
+Alta probabilidad de integración de integrantes con disponibilidad limitada, poco interés o escasa experiencia en trabajo colaborativo.
+Desbalance en la contribución: frecuentemente uno o dos estudiantes terminan asumiendo la mayor parte del trabajo.
+Riesgo elevado de bajo rendimiento del grupo y afectación directa en la nota final del proyecto y del curso.
+Aunque no existen estadísticas institucionales públicas, no es difícil percibir que la enseñanza virtual ya elimina el factor de interacción frente a la enseñanza presencial. De hecho, actualmente, para este curso vigente de EFSRT II, más del 50% de estudiantes aún no tiene grupos conformados. Es decir, no obtendrán nota y por lo tanto no aprobarán.
+1.4.- Justificación del Proyecto
+La implementación de “Match Group” permite mitigar estos riesgos al proporcionar una herramienta que fomenta la formación de grupos basados en afinidad y compatibilidad real, en lugar de la casualidad. El proyecto contribuye positivamente al proceso educativo al:
+Mejorar la calidad de la colaboración grupal.
+Reducir la frustración y el estrés de los estudiantes que suelen cargar con el trabajo completo.
+Elevar el promedio de desempeño en proyectos grupales.
+Permite contar con un medio para conocer a sus compañeros a través de información personal y académica que puede mejorar la comunicación e interacción.
+Fortalecer habilidades socioemocionales y de trabajo en equipo desde el inicio del curso.
+De esta manera, la solución no solo beneficia a los estudiantes, sino que también reduce la carga de gestión y reclamos para los docentes y mejora la percepción general de la experiencia educativa en modalidad virtual y del Instituto en general.
+CAPÍTULO 2
+DESCRIPCIÓN DEL PROYECTO
+Desarrollar una plataforma web sencilla que facilite la formación de grupos de trabajo compatibles entre estudiantes de un curso virtual, mediante el registro voluntario de perfiles y la visualización de coincidencias relevantes, con el fin de incrementar la calidad y equidad de la colaboración grupal.
+2.1.- Objetivos
+Registro de perfiles. Lograr que al menos el 70 % (43) de los 62 estudiantes matriculados en el curso virtual complete el registro de su perfil (datos básicos, disponibilidad horaria, habilidades y preferencias) durante las primeras dos semanas de clases, entre el 12 y el 28 de enero de 2026.
+Visualización de coincidencias. Desarrollar un módulo de consulta en tiempo real que, a partir de los perfiles registrados, muestre a cada estudiante entre 2 y 4 compañeros con alta compatibilidad (basada en disponibilidad horaria, carrera y habilidades técnicas) antes de la fecha límite de conformación de grupos establecida por el docente (prevista para el 4 de febrero de 2026).
+Generación automática de grupos equilibrados. Aplicar un algoritmo de inteligencia artificial (búsqueda local con ponderación de criterios) que analice los perfiles completos y genere grupos de 4 a 5 integrantes, garantizando que al menos el 80 % de los grupos formados cumplan con los criterios de homogeneidad en disponibilidad horaria y heterogeneidad en habilidades y experiencia, en un tiempo de ejecución inferior a 2 minutos.
+2.2.- Alcance
+Qué incluye el proyecto (dentro del alcance):
+Desarrollo de una página web estática y dinámica básica con las siguientes funcionalidades principales:
+Generación de lista de estudiantes en base a alumnos inscritos para acceso predeterminado vía código de alumno.
+Formulario de registro de perfil (datos personales básicos, distrito/provincia, especialidad y ciclo, disponibilidad de tiempo y horarios, conocimientos/habilidades, experiencia en proyectos).
+Formulario para modificación/actualización de datos del usuario
+Almacenamiento temporal de perfiles en formato CSV (descargable/subible manualmente) o en localStorage del navegador.
+Sección de búsqueda de compatibilidad de conformación de grupo por criterios personales del estudiante.
+Visualización de lista de coincidencias con información resumida de cada perfil compatible, generado por algoritmos o via API.
+Diseño responsivo elemental que permita su uso en computadora y dispositivos móviles.
+Qué NO incluye el proyecto (fuera del alcance):
+Autenticación avanzada con asociación de email a la cuenta del estudiante o recuperacion de correo.
+Base de datos en servidor (MySQL, Firebase, etc.).
+Mensajería privada o chat entre usuarios.
+Consultas ilimitadas (dependiendo de la implementación de algoritmo en el sistema, será ilimitada; si es a través de API, será limitada)
+Funcionalidades avanzadas de matching algorítmico (puntuación ponderada, recomendación inteligente).
+Funciones avanzadas de interacción vía objetos dinámicos que reaccionen a preferencias de afinidad del usuario. (ver recomendaciones)
+Implementación en producción (hosting permanente, dominio propio).
+Mantenimiento posterior al cierre del curso.
+2.3.- Ubicación
+La plataforma será alojada en un hosting local durante el desarrollo y en hosting publico durante las pruebas y presentación (accesible desde cualquier navegador en computadora o celular). No requiere instalación ni servidor dedicado. Se prevé su uso dentro del ámbito de un curso específico de una institución educativa superior en modalidad virtual, accesible desde cualquier dispositivo con conexión a internet y navegador web.
+2.6.- Beneficiarios Directos e Indirectos
+Beneficiarios directos
+Estudiantes matriculados en el curso virtual (usuarios principales que registrarán sus perfiles y utilizarán la herramienta para buscar compañeros compatibles) al contar con un grupo mejor integrado por afinidades establecidas previamente. Mayor posibilidad de obtener notas más altas debido al buen inicio de sus proyectos. Posibilidad de contar con un elemento de socialización que incentive el mayor conocimiento de sus compañeros con el punto de partida de los perfiles de MatchGroup.
+Docente del curso (podrá recomendar o requerir el uso de la plataforma como apoyo para la conformación de grupos). Además se reducirá enormemente la extensión de plazos para conformación de grupos.
+Beneficiarios indirectos
+Compañeros en otros cursos que no utilicen activamente la plataforma pero puedan adaptarlo sin mucha dificultad, pues el principio de formación de grupos suele ser típico.
+Institución educativa (mejora en la percepción de la calidad de la enseñanza al superarse las dificultades iniciales del desarrollo de proyectos grupales. Destacando entre otras instituciones al contar con herramientas propias que la destacan.
+Familiares y entorno cercano de los estudiantes (beneficio derivado de una mejor gestión del tiempo y menor estrés académico).
+CAPÍTULO 3
+DESARROLLO DEL PROYECTO
+Descripción y entregables. 
+Mapa de sitio
+El sitio tiene pocas páginas pues gran parte del contenido se concentra en el formulario de ingreso de datos. Y la otra parte es el código que realiza los cálculos para la obtención de grupos, y que no requiere de interfaz por tratarse de un cálculo que se realiza eventualmente una sola vez. El index o pagina inicial viene a ser la de logueo del alumno, para pasar luego al menú principal y las tres únicas opociones disponibles: registrar datos, modificar datos y visualizar el grupo recomendado.
+Descripción de la propuesta del sistema desarrollado
+MatchGroup es una aplicación web diseñada para facilitar la formación de grupos de trabajo equilibrados en entornos educativos virtuales (institutos, universidades). Su objetivo principal es compensar la falta de interacción informal entre estudiantes —propia de la educación a distancia— mediante un sistema inteligente que agrupa a los alumnos según múltiples criterios académicos, personales y de disponibilidad.
+El sistema permite a los estudiantes registrar su información personal, académica y preferencias, y luego, mediante un algoritmo de optimización, asigna grupos balanceados que maximizan las probabilidades de éxito académico colectivo. Los estudiantes pueden visualizar su grupo asignado y los perfiles de sus compañeros.
+Filosofía de MatchGroup: Equilibrio para el éxito colectivo
+La filosofía de MatchGroup se basa en el principio de que un grupo diverso y equilibrado potencia el aprendizaje de todos sus miembros. En lugar de agrupar por simple similitud (ej. mismos horarios o mismas habilidades), el sistema busca complementar fortalezas y debilidades.
+Homogeneidad en lo práctico: Se agrupa a estudiantes con disponibilidad horaria compatible (días, turnos, horas semanales) para facilitar la coordinación de reuniones.
+Heterogeneidad en lo académico: Se mezclan estudiantes con diferentes niveles de experiencia (principiante, intermedio, avanzado), distintas habilidades técnicas (programación, diseño, redacción, etc.) y roles preferidos (líder, coordinador, investigador). Esto fomenta el aprendizaje colaborativo, donde los más experimentados ayudan a los que inician, y se distribuyen las tareas según las fortalezas de cada uno.
+El objetivo final es que el grupo, en su conjunto, pueda afrontar los retos académicos de manera organizada, compensando las dificultades individuales con las fortalezas colectivas, y así aumentar la probabilidad de obtener notas aprobatorias y una aplicación correcta de los conocimientos.
+Funcionamiento del sistema – Pasos iniciales
+Se crea la base de datos en MySql con las instrucciones almacenadas en el archivo 00_init_db.php que inicializa la base de datos y crea 3 tablas: alumnos, grupos y grupos_integrantes.
+La fuente de información primaria es la lista de alumnos, que la profesora brinda al inicio de clases, que tiene entre otros los datos esenciales: Nombres, apellidos código de alumno y correo electrónico. Esta información se exporta a CSV y constituye la puerta de acceso sólo para los estudiantes matriculados en el curso. Se copia en una subcarpeta del proyecto para que con una instrucción en php (01_importar_csv.php) se populan/llenan los datos básicos de los alumnos.
+Funcionamiento del sistema – Ingreso - Login
+El alumno ingresa con su código de estudiante y su primer nombre que se convierte en su contraseña. Si bien el sistema pide nombre o contraseña, la posibilidad de cambiar el nombre por una contraseña personalizada no se desarrollará en esta etapa. El sistema a través de PHP, valida los datos contra la base de datos. Si es correcto, se almacena su información en sessionStorage y redirige al menú principal. Esta metodología sencilla garantiza que solo los alumnos matriculados podrán acceder al sistema. La interfaz es bastante sencilla y compatible visualmente con dispositivos móviles sin necesidad de trabajar en un diseño responsive, lo cual permitió un enfoque en la parte central del proyecto que es el algoritmo de selección.
+Funcionamiento del sistema – Menú principal
+El menú muestra opciones dinámicas según si el alumno ya completó su registro de datos (campo formulario = 0 o 1):
+Si no ha registrado: Solo aparecen "Registrar mis datos" y "Salir".
+Si ya registró: Aparecen "Modificar datos", "Ver mi grupo" y "Salir".
+Nota: La opción Ver mi grupo, solo estará libre cuando los alumnos, la gran mayoría, hayan completado el registro de sus datos. Para la etapa de testeo, se crearon datos ficticios para la ejecución del algoritmo de selección y validar que el sistema funcione correctamente.
+Funcionamiento del sistema – Ingreso/Modificación de datos
+El formulario recopila información organizada en secciones:
+Grupo de Datos básicos: Nombres (no es modificable), apellidos (no es modificable), carrera, ciclo, ubicación (distrito de lima/departamento del peru/extranjero).
+Grupo de Disponibilidad horaria: Días disponibles (L-M-M-J-V-S-D), turnos (mañana, tarde, noche), horas semanales que puede dedicar, preferencia de reunión: sincrónica (zoom o meet)/asincrónica(whatsapp).
+Grupo Situación laboral y compromiso: Si trabaja, tipo de trabajo (carga laboral full time, parcial, ocasional), nivel de responsabilidad autopercibido (1 a 5), compromiso con el curso (bajo, medio, alto).
+Grupo Experiencia y habilidades: Experiencia previa en la carrera o en grupos (ambos como principiante, intermedio, avanzado). Rol preferido en el grupo (líder, coordinador, investigador, desarrollador, etc. Idiomas que domina. 
+Grupo Estilo de aprendizaje y preferencias: Estilo predominante (teórico, práctico, visual, auditivo), preferencia de grupos  homogéneos o diversos, tamaño de grupo ideal, objetivos en el curso (social, académico o ambicioso.
+Grupo Acceso a tecnología: Dispositivos con los que cuenta (Tablet, laptop, pc, servidor), calidad de internet (mala, regular, buena)
+Grupo Dominio de programas Para programas necesarios en el curso, se solicita el nivel de dominio, que es un parámetro importante que garantiza un desarrollo de los temas en la experiencia de uso. Aplica para Windows, Office, Canvas, VSC, Git/GitHub).
+Grupo Preferencias de formación: Cómo prefiere ser asignado (automático, similar a mí, indiferente) y comentarios adicionales donde el usuario puede presentarse y escribir sobre cualquier otro aspecto que considere.
+Finalmente quedan dos botones, para grabar los datos ingresados o modificados o para salir y volver al menú sin cambiar nada. En ambos casos se regresa al menú principal.
+Cada campo es relevante para el algoritmo de asignación. Los checkboxes (múltiples opciones) se guardan como strings separados por comas en la base de datos SQLite.
+Funcionamiento del sistema – Visualización del grupo asignado
+Todos los estudiantes, o la mayoría de ellos, una vez completen el formulario, permitirán la ejecución del algoritmo de selección, que sólo puede ejecutarlo el administrador. Es un archivo php 03_generar_grupos.php que popula una tabla específica grupo_integrantes. Una vez que el administrador ejecuta el algoritmo de formación de grupos, cada alumno ya puede acceder a "Ver mi grupo". La página muestra:
+El nombre del grupo (ej. "Grupo 1").
+Lista de integrantes con sus nombres, apellidos, carrera (en texto completo) y ciclo.
+Un botón para volver al menú.
+El algoritmo de generación de grupos 
+El algoritmo de formación de grupos es un proceso de optimización por búsqueda local que busca maximizar la calidad de los grupos según criterios ponderados.
+Representación de los datos
+Cada alumno tiene atributos que pueden ser:
+Numéricos: ciclo (1 a 10), horas semanales (categorías convertidas a números).
+Categóricos: carrera, experiencia, rol preferido, etc. (se comparan como iguales o diferentes).
+Multivaluados (arrays): días disponibles, turnos, habilidades, idiomas, objetivos, dispositivos. Se comparan usando el índice de Jaccard (intersección / unión).
+Ponderación de criterios
+A cada criterio se le asigna un peso que refleja su importancia en la formación de grupos. Por ejemplo:
+Carrera: peso 10 (fundamental que sea la misma).
+Días y turnos: peso 9 (para facilitar reuniones).
+Experiencia en la carrera: peso 7 (importante para la heterogeneidad).
+Habilidades: peso 6 (para complementar).
+Estilo de aprendizaje: peso 4 (menos prioritario).
+Además, cada criterio tiene un tipo:
+Homogéneo: se premia que los valores sean similares (baja varianza). Ejemplo: días disponibles.
+Heterogéneo: se premia que los valores sean diversos (alta varianza). Ejemplo: nivel de experiencia.
+Función de fitness (calidad de un grupo)
+Para un grupo dado, se calcula una puntuación para cada criterio:
+Si el criterio es homogéneo: similitud = 1 - (varianza_normalizada).
+Si es heterogéneo: sim ilitud = varianza_normalizada.
+Luego se multiplica por el peso del criterio y se suma. El fitness total del grupo es el promedio de las puntuaciones de todos los criterios.
+Algoritmo de búsqueda local
+Se mezclan aleatoriamente todos los estudiantes y se dividen en grupos de tamaño fijo (ej. 4).
+Se calcula el fitness total (promedio de todos los grupos).
+Se buscan mejoras intercambiando un estudiante de un grupo con otro de otro grupo. Si el intercambio aumenta el fitness total, se realiza y se reinicia la búsqueda.
+El proceso se repite varias veces con diferentes mezclas iniciales para evitar máximos locales.
+Se guarda la mejor asignación encontrada en la base de datos (tablas grupos y grupo_integrantes).
+Este método, aunque simple, es efectivo para poblaciones pequeñas (hasta 100 estudiantes) y produce grupos equilibrados según los criterios definidos.
+CONCLUSIONES Y RECOMENDACIONES
+Conclusiones
+La tecnología como herramienta integradoraEl desarrollo de MatchGroup ha demostrado que es posible utilizar la tecnología para fomentar la integración entre estudiantes en entornos virtuales, donde la distancia física y la falta de interacción espontánea suelen ser barreras. El sistema no solo automatiza la formación de grupos, sino que promueve un sentido de pertenencia y colaboración, elementos clave para el éxito académico en la educación a distancia.
+Complejidad subyacente y aporte de la inteligencia artificialAunque el proyecto partió de una aspiración modesta, el diseño del algoritmo de formación de grupos implicó conceptos propios de la ciencia de datos, como la ponderación de criterios, el cálculo de similitudes y la optimización combinatoria. La asistencia de herramientas de inteligencia artificial (como DeepSeek) fue fundamental para comprender, adaptar e implementar estos conceptos, evidenciando que el apoyo de la IA puede acelerar el aprendizaje y la resolución de problemas complejos, incluso en etapas iniciales de formación.
+Evolución del enfoque: de la sugerencia de pares a la formación equilibradaInicialmente se concibió un sistema que recomendara compañeros afines al perfil del estudiante. Sin embargo, durante el desarrollo se comprendió que el objetivo debía ser más ambicioso: formar grupos equilibrados que complementen las fortalezas y debilidades de cada integrante, maximizando así las oportunidades de aprendizaje colectivo. Este cambio de perspectiva refleja una madurez en la comprensión del problema y alinea el sistema con las teorías de aprendizaje colaborativo.
+Factibilidad y beneficios de la implementación institucionalEl proyecto evidencia que, aunque la puesta en marcha de una herramienta de este tipo requiere inversión inicial en programación y mantenimiento, una vez implementada su operación es sencilla y los beneficios potenciales superan ampliamente los costos. La capacidad de generar grupos optimizados en pocos minutos, con criterios personalizables, ofrece a las instituciones una solución práctica para mejorar la experiencia educativa y los resultados académicos.
+Datos alarmantes que justifican la intervención tecnológicaEl análisis preliminar de la situación actual del curso mostró que, de 62 alumnos matriculados, solo 32 (52%) lograron conformar grupos de trabajo de manera espontánea. Esta cifra refleja una problemática real que afecta el rendimiento y la permanencia de los estudiantes. MatchGroup se presenta como una respuesta concreta para revertir esta tendencia, facilitando la integración y aumentando las probabilidades de éxito en entornos virtuales.
+RECOMENDACIONES
+Implementación piloto en el siguiente ciclo académicoSe recomienda poner a prueba MatchGroup en situaciones reales en un grupo de estudiantes durante el próximo ciclo o módulo de estudios, recopilando datos comparativos sobre tasas de aprobación, satisfacción y cohesión grupal frente a ciclos anteriores que no utilizaron la herramienta. Esta validación empírica permitirá ajustar los criterios del algoritmo y demostrar su efectividad antes de una posible expansión institucional.
+Destinar recursos institucionales para el desarrollo y mantenimiento de herramientas similares a MatchGroup.Dado que Cibertec es un instituto tecnológico, es natural que lidere el uso de la tecnología para resolver problemas educativos. Se sugiere que la institución considere asignar personal de programación y soporte para mantener y mejorar MatchGroup, así como para explorar otras soluciones digitales que aborden necesidades similares (tutorías virtuales, seguimiento de grupos, etc.). La inversión en este tipo de herramientas puede traducirse en mejores indicadores de retención y rendimiento.
+Ampliación de funcionalidades y mejora continuaA futuro, se podrían incorporar funcionalidades como la visualización de estadísticas de compatibilidad, la exportación de grupos a formatos editables, o la integración con plataformas de aprendizaje (como Canvas o Moodle) para facilitar la comunicación y el seguimiento de los equipos. Asimismo, se podría permitir que los propios estudiantes evalúen la experiencia de trabajo grupal, retroalimentando al sistema para refinar los criterios de asignación.
+Promover el uso de tecnología para superar brechas de integraciónLa alta tasa de alumnos que no logran formar grupos evidencia una debilidad en los mecanismos tradicionales de organización estudiantil. Se recomienda a la institución difundir activamente entre docentes y alumnos la existencia de herramientas como MatchGroup, y fomentar su uso como parte de la estrategia pedagógica. La tecnología debe ser vista no solo como un medio de enseñanza, sino como un facilitador de relaciones humanas y aprendizaje colaborativo, especialmente en contextos virtuales.
+Lima 23 de febrero de 2026

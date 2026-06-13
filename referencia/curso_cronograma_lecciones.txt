@@ -1,0 +1,234 @@
+INSTITUTO DE EDUCACIÓN SUPERIOR PRIVADO CIBERTEC 
+DIRECCIÓN ACADÉMICA 
+CARRERAS PROFESIONALES 
+IES Cibertec Facultad de Tecnologías de la Información Página 1 
+ 
+ 
+ALGORITMOS Y ESTRUCTURA DE DATOS (4683) 
+ 
+2026 
+SESIÓN 01 
+SESIÓN UNIDAD / TEMA ACTIVIDAD DURACIÓN 
+ UNIDAD 1 • Introducción. Clase. Objeto. Declaración y creación de objetos 
+(operador new). Acceso a los miembros de la clase (operador 
+punto). Paquete. Especificador de acceso public. Sentencia import. 
+ 
+TEORÍA Tema 1 2 HORAS 
+ Conceptos básicos de  
+LABORATORIO • Desarrollo de ejercicios aplicativos. 3 HORAS 
+POO 
+SESIÓN 02 
+SESIÓN UNIDAD / TEMA ACTIVIDAD DURACIÓN 
+  
+UNIDAD 1 • Dirección de memoria de un objeto. Asignación entre referencias. 
+Constructor. Creación e inicialización de objetos. Encapsulamiento. 
+Especificador de acceso private. Métodos de acceso público: 
+set/get. 
+ 
+TEORÍA Tema 2 2 HORAS 
+ Control de acceso y 
+encapsulamiento 
+ 
+LABORATORIO • Desarrollo de ejercicios aplicativos. 3 HORAS 
+SESIÓN 03 
+SESIÓN UNIDAD / TEMA ACTIVIDAD DURACIÓN 
+ UNIDAD 1 • Referencia this. Modificador static (elementos únicos). Bloque de 
+inicialización static. Modificador final (constantes). Sobrecarga. Uso 
+del this en sobrecarga. Modificador final (constantes). Librería 
+ 
+TEORÍA Tema 3 2 HORAS 
+ Miembros de clase, 
+constantes y 
+sobrecarga 
+ 
+LABORATORIO • Desarrollo de ejercicios aplicativos. 3 HORAS 
+SESIÓN 04 
+SESIÓN UNIDAD / TEMA ACTIVIDAD DURACIÓN 
+ 
+TEORÍA UNIDAD 1 
+Tema 4 
+Clase String 
+• Descripción. Métodos básicos de la clase String. Concatenación. 
+Recorrido. Librería. 
+ 
+2 HORAS 
+LABORATORIO • Desarrollo de ejercicios aplicativos. 3 HORAS 
+SESIÓN 05 
+SESIÓN UNIDAD / TEMA ACTIVIDAD DURACIÓN 
+ 
+TEORÍA 
+ 
+UNIDAD 2 
+Tema 5 
+Conceptos y 
+operaciones simples 
+• Descripción. Declaración e inicialización. Declaración privada e 
+inicialización. Recorrido. Remplazo. Operaciones públicas básicas. 
+Operaciones públicas complementarias. 
+ 
+2 HORAS 
+ 
+LABORATORIO 
+• Desarrollo de ejercicios aplicativos.  
+3 HORAS 
+Evaluación de Teoría/Laboratorio 1 (T1) 
+SESIÓN 06 
+SESIÓN UNIDAD / TEMA ACTIVIDAD DURACIÓN 
+ 
+ 
+TEORÍA 
+ 
+UNIDAD 2 
+Tema 6 
+• Descripción. Declaración, creación y reserva. Declaración privada, 
+creación y reserva. Ingreso personalizado. Recorrido. 
+Redimensionamiento. Método privado ampliarArreglo. Operaciones 
+públicas básicas. Operaciones públicas complementarias 
+ 
+ 
+2 HORAS 
+ Artificios y 
+operaciones variadas 
+ 
+LABORATORIO • Desarrollo de ejercicios aplicativos. 3 HORAS 
+INSTITUTO DE EDUCACIÓN SUPERIOR PRIVADO CIBERTEC 
+DIRECCIÓN ACADÉMICA 
+CARRERAS PROFESIONALES 
+IES Cibertec Facultad de Tecnologías de la Información Página 2 
+ 
+ 
+SESIÓN 07 
+SESIÓN UNIDAD / TEMA ACTIVIDAD DURACIÓN 
+ UNIDAD 2 Tema 7: 
+• Método privado Buscar. Método privado Intercambiar. Operaciones 
+públicas complementarias. 
+ 
+Tema 8: 
+• Método privado Eliminar. Método privado Insertar. Operaciones 
+públicas complementarias. 
+ 
+ Tema 7  
+ Artificios y  
+TEORÍA operaciones 2 HORAS 
+ especiales  
+ Tema 8  
+ 
+Artificios y 
+ 
+   
+LABORATORIO operaciones 
+complementarias 
+• Desarrollo de ejercicios aplicativos. 3 HORAS 
+SESIÓN 08 
+SESIÓN UNIDAD / TEMA ACTIVIDAD DURACIÓN 
+  
+UNIDAD 3 • Descripción. Coleccionista de objetos distintos. Coleccionistas de 
+objetos iguales. Declaración privada y creación. Métodos básicos de 
+la clase ArrayList. Operaciones públicas básicas. Operaciones 
+públicas complementarias. 
+ 
+TEORÍA Tema 9 2 HORAS 
+ Conceptos y 
+operaciones simples 
+ 
+LABORATORIO • Desarrollo de ejercicios aplicativos. 3 HORAS 
+SESIÓN 09 
+SESIÓN UNIDAD / TEMA ACTIVIDAD DURACIÓN 
+ 
+TEORÍA  
+UNIDAD 3 
+Tema 10 
+Operaciones variadas 
+• Métodos adicionales de la clase ArrayList. Operaciones públicas 
+básicas. 
+ 
+2 HORAS 
+ 
+LABORATORIO 
+• Desarrollo de ejercicios aplicativos.  
+3 HORAS 
+Evaluación de Teoría/Laboratorio 2 (T2) 
+SESIÓN 10 
+SESIÓN UNIDAD / TEMA ACTIVIDAD DURACIÓN 
+TEORÍA UNIDAD 3 
+Tema 11 
+Mantenimiento 
+• Diseño básico de un proyecto 2 HORAS 
+ 
+LABORATORIO • Desarrollo de ejercicios aplicativos.  
+3 HORAS 
+ 
+SESIÓN 11 
+SESIÓN UNIDAD / TEMA ACTIVIDAD DURACIÓN 
+ 
+ 
+TEORÍA 
+UNIDAD 4 
+Tema 12 
+Herencia y 
+Polimorfismo 
+• Generalización/Especialización, Herencia, Relación “Es un” o “Es 
+una”, Uso de “super”, Sobreescritura de métodos. 
+ 
+ 
+2 HORAS 
+ 
+ 
+LABORATORIO 
+UNIDAD 5 
+Tema 14 
+Manejo de archivos 
+de texto 
+• Descripción, Clases PrintWriter y FileWriter, Escritura en un archivo 
+de texto, Clases BufferedReader y FileReader, Método split de la 
+clase String, Lectura de un archivo de texto. 
+ 
+ 
+3 HORAS 
+SESIÓN 12 
+SESIÓN UNIDAD / TEMA ACTIVIDAD DURACIÓN 
+ 
+ 
+TEORÍA 
+UNIDAD 4 
+Tema 12 
+Herencia y 
+Polimorfismo 
+• Clases abstractas y métodos abstractos, Técnicas de casting, 
+Polimorfismo y uso “instanceof” 
+ 
+ 
+2 HORAS 
+ 
+LABORATORIO 
+UNIDAD 5 
+Tema 15 
+Mantenimiento 
+• Diseño de un proyecto con archivos de texto.  
+3 HORAS 
+INSTITUTO DE EDUCACIÓN SUPERIOR PRIVADO CIBERTEC 
+DIRECCIÓN ACADÉMICA 
+CARRERAS PROFESIONALES 
+IES Cibertec Facultad de Tecnologías de la Información Página 3 
+ 
+ 
+SESIÓN 13 
+SESIÓN UNIDAD / TEMA ACTIVIDAD DURACIÓN 
+TEORÍA UNIDAD 4 
+Tema 13 
+Intefaces 
+• Definición. Herencia múltiple 2 HORAS 
+LABORATORIO Evaluación Final de Teoría/Laboratorio (EF) 3 HORAS 
+SESIÓN 14 
+SESIÓN UNIDAD / TEMA ACTIVIDAD DURACIÓN 
+TEORÍA  
+Sesión 
+Integradora 
+• Integración temática. 2 HORAS 
+ 
+LABORATORIO 
+• Evaluación de Proyectos.  
+3 HORAS  
+Sesión 15 
+EVALUACIÓN DE CERTIFICACIÓN 
+ 
